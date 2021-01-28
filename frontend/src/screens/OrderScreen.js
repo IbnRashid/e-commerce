@@ -46,11 +46,9 @@ const OrderScreen = ({ match }) => {
 			};
 			document.body.appendChild(script);
 		};
-		if (!order || successPay) {
+		if (!order || successPay || order._id !== orderId) {
 			dispatch({ type: ORDER_PAY_RESET });
-			if (!order || order._id !== orderId) {
-				dispatch(getOrderDetails(orderId));
-			}
+			dispatch(getOrderDetails(orderId));
 		} else if (!order.isPaid) {
 			if (!window.paypal) {
 				addPayPalScript();
