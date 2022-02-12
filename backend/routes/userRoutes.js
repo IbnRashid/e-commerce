@@ -7,10 +7,10 @@ import {
 	getUsers,
 } from "../controllers/userController.js";
 const router = express.Router();
-import { protect } from "../Middleware/authMiddleware.js";
+import { protect, admin } from "../Middleware/authMiddleware.js";
 
-router.route("/").post(registerUser).get(protect, getUsers);
-router.post("/login", authUser)
+router.route("/").post(registerUser).get(protect, admin, getUsers);
+router.post("/login", authUser);
 router
 	.route("/profile")
 	.get(protect, getUserProfile)
