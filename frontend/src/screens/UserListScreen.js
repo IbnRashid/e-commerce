@@ -49,7 +49,7 @@ const UserListScreen = () => {
 									{user.isAdmin ? (
 										<i className="fas fa-check" style={{ color: "green" }}></i>
 									) : (
-										<i className="fas fa-times" style={{ color: "green" }}></i>
+										<i className="fas fa-times" style={{ color: "red" }}></i>
 									)}
 								</td>
 								<td>
