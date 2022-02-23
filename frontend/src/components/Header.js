@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
@@ -16,10 +16,12 @@ const Header = () => {
 	return (
 		<header>
 			<Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+			{/* <navbar> */}
+			{/* instead of link containers from bootstrap you can use link from react router and the containers are used to center the component on the page or centering it within the content */}
 				<Container>
-					<LinkContainer to="/">
-						<Navbar.Brand>Brand name</Navbar.Brand>
-					</LinkContainer>
+					<Link to="/" className="navbar-logo">
+						<div className="navbar-brand">Brand name</div>
+					</Link>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Route render={({ history }) => <SearchBox history={history} />} />
@@ -61,6 +63,7 @@ const Header = () => {
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
+			{/* </navbar> */}
 			</Navbar>
 		</header>
 	);
