@@ -26,38 +26,38 @@ const Header = () => {
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Route render={({ history }) => <SearchBox history={history} />} />
 						<Nav className="ml-auto">
-							<LinkContainer to="/cart">
-								<Nav.Link>
+							<Link to="/cart">
+								{/* <Nav.Link>
 									<i className="fas fa-shopping-cart"></i>Cart
-								</Nav.Link>
-							</LinkContainer>
+								</Nav.Link> */} cart
+							</Link>
 							{userInfo ? (
 								<NavDropdown title={userInfo.name} id="username">
-									<LinkContainer to="/profile">
+									<Link to="/profile">
 										<NavDropdown.Item>Profile</NavDropdown.Item>
-									</LinkContainer>
+									</Link>
 									<NavDropdown.Item onClick={logoutHandler}>
 										Logout
 									</NavDropdown.Item>
 								</NavDropdown>
 							) : (
-								<LinkContainer to="/login">
+								<Link to="/login">
 									<Nav.Link>
 										<i className="fas fa-user"></i>Sign In
 									</Nav.Link>
-								</LinkContainer>
+								</Link>
 							)}
 							{userInfo && userInfo.isAdmin && (
 								<NavDropdown title="Admin" id="adminmenu">
-									<LinkContainer to="/admin/userList">
+									<Link to="/admin/userList">
 										<NavDropdown.Item>Users</NavDropdown.Item>
-									</LinkContainer>
-									<LinkContainer to="/admin/productList">
+									</Link>
+									<Link to="/admin/productList">
 										<NavDropdown.Item>Products</NavDropdown.Item>
-									</LinkContainer>
-									<LinkContainer to="/admin/orderList">
+									</Link>
+									<Link to="/admin/orderList">
 										<NavDropdown.Item>Orders</NavDropdown.Item>
-									</LinkContainer>
+									</Link>
 								</NavDropdown>
 							)}
 						</Nav>
