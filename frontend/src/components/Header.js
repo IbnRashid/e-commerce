@@ -17,7 +17,7 @@ const Header = () => {
 		<header>
 			<Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
 				{/* <navbar> */}
-				{/* instead of link containers from bootstrap you can use link from react router and the containers are used to center the component on the page or centering it within the content and collapse on select works on the other website */}
+				{/* instead of link containers from bootstrap you can use link from react router and the containers are used to center the component on the page or centering it within the content and collapse on select works on the other website .*/}
 				<Container>
 					<Link to="/" className="navbar-logo">
 						<div className="navbar-brand">Brand name</div>
