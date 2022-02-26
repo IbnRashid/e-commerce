@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { LinkContainer } from "react-router-bootstrap";
+// import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
@@ -15,8 +15,8 @@ const Header = () => {
 	};
 	return (
 		<header>
-			<Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
-				{/* <navbar> */}
+			{/* <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect> */}
+				<navbar>
 				{/* instead of link containers from bootstrap you can use link from react router and the containers are used to center the component on the page or centering it within the content and collapse on select works on the other website .*/}
 				<Container>
 					<Link to="/" className="navbar-logo">
@@ -29,7 +29,8 @@ const Header = () => {
 							<Link to="/cart">
 								{/* <Nav.Link>
 									<i className="fas fa-shopping-cart"></i>Cart
-								</Nav.Link> */} cart
+								</Nav.Link> */}
+								cart
 							</Link>
 							{userInfo ? (
 								<NavDropdown title={userInfo.name} id="username">
@@ -63,8 +64,8 @@ const Header = () => {
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
-				{/* </navbar> */}
-			</Navbar>
+				</navbar>
+			{/* </Navbar> */}
 		</header>
 	);
 };
