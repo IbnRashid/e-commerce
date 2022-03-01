@@ -15,7 +15,7 @@ const Header = () => {
 	};
 	return (
 		<header>
-			<Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+			<Navbar bg="default" variant="dark" expand="lg" collapseOnSelect>
 			{/* <navbar> */}
 				{/* instead of link containers from bootstrap you can use link from react router and the containers are used to center the component on the page or centering it within the content and collapse on select works on the other website .*/}
 				<Container>
@@ -27,10 +27,9 @@ const Header = () => {
 						<Route render={({ history }) => <SearchBox history={history} />} />
 						<Nav className="ml-auto">
 							<Link to="/cart">
-								{/* <Nav.Link>
+								<div>
 									<i className="fas fa-shopping-cart"></i>Cart
-								</Nav.Link> */}
-								cart
+								</div>
 							</Link>
 							{userInfo ? (
 								<NavDropdown title={userInfo.name} id="username">
@@ -43,9 +42,9 @@ const Header = () => {
 								</NavDropdown>
 							) : (
 								<Link to="/login">
-									<Nav.Link>
+									<div>
 										<i className="fas fa-user"></i>Sign In
-									</Nav.Link>
+									</div>
 								</Link>
 							)}
 							{userInfo && userInfo.isAdmin && (
