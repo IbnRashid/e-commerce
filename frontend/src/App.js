@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Header from "./components/Header";
+import Header2 from "./components/Header2";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
@@ -22,6 +23,7 @@ import OrderListScreen from "./screens/OrderListScreen";
 const App = () => {
 	return (
 		<Router>
+			<Header2/>
 			<Header />
 			<main className="py-3">
 				<Container>
