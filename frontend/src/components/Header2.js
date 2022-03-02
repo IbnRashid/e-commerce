@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import img from "../computech-logo.svg";
+
 
 const Header2 = () => {
-  return (
-    <div>Header2</div>
-  )
-}
+	return (
+		<header className="test-header">
+			<Link to="/">
+				<img className="computech-logo" src={img} alt="#" />
+			</Link>
+		</header>
+	);
+};
 
-export default Header2
+export default Header2;
