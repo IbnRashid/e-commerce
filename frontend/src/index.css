@@ -12,12 +12,8 @@ main {
 }
 
 .computech-logo {
-	justify-self: start;
-	margin-left: 20px;
-	cursor: pointer;
-	text-decoration: none;
-	font-size: 2rem;
-  height: 2rem;
+	justify-self: left;
+  height: 2.5rem;
 }
 
 h3 {
