@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import img from "../computech-logo.svg";
 
 const Header2 = () => {
+	const dispatch = useDispatch();
+
+	const userLogin = useSelector((state) => state.userLogin);
+	const { userInfo } = userLogin;
+
+	const logoutHandler = () => {
+		dispatch(logout());
+	};
+
 	return (
 		<header className="test-header">
 			<div>
