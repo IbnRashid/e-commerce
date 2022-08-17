@@ -14,10 +14,15 @@ const Header2 = () => {
 
 	return (
 		<header className="test-header">
-			<div>
+			<div className="nav-left">
 				<Link to="/">
 					<img className="computech-logo" src={img} alt="#" />
 				</Link>
+
+				<form class="form-inline">
+					<input name="q" placeholder="Search Products..." type="text" />
+					<button type="submit">Search</button>
+				</form>
 			</div>
 			<div>
 				<Link to="/cart">

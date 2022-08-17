@@ -23,10 +23,10 @@ import OrderListScreen from "./screens/OrderListScreen";
 const App = () => {
 	return (
 		<Router>
-			<Header2/>
-			<Header />
-			<main className="py-3">
-				<Container>
+			<Header2 />
+			{/* <Header /> */}
+			<main>
+				{/* <Container> */}
 					<Route path="/order/:id" component={OrderScreen} />
 					<Route path="/shipping" component={ShippingScreen} />
 					<Route path="/payment" component={PaymentScreen} />
@@ -58,7 +58,7 @@ const App = () => {
 						exact
 					/>
 					<Route path="/" component={HomeScreen} exact />
-				</Container>
+				{/* </Container> */}
 			</main>
 			<Footer />
 		</Router>
