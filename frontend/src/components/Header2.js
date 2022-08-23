@@ -19,16 +19,18 @@ const Header2 = () => {
 					<img className="computech-logo" src={img} alt="#" />
 				</Link>
 
-				<form class="form-inline">
-					<input name="q" placeholder="Search Products..." type="text" />
-					<button type="submit">Search</button>
+				<form className="search-bar">
+					<input name="q" placeholder="Search Products..." type="text" className="search-input" />
+					<button type="submit" className="search-btn">Search</button>
 				</form>
+
+				
 			</div>
-			<div>
-				<Link to="/cart">
+			<div className="nav-right">
+				<Link to="/cart" className="nav-link">
 					<i className="fas fa-shopping-cart"></i> Cart
 				</Link>
-				<Link to="/login">
+				<Link to="/login" className="nav-link">
 					<i className="fas fa-user"></i> Sign In
 				</Link>
 			</div>
