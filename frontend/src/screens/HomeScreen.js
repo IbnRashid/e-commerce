@@ -301,7 +301,10 @@ const HomeScreen = ({ match }) => {
 							</linearGradient>
 						</defs>
 					</svg>
-					<h1 className="hero-text">melty me bananas</h1>
+
+					<div className="hero-txt">
+						<h1 className="hero-text">Designer Furniture Made For You</h1>
+					</div>
 				</div>
 			) : (
 				<Link to="/" className="btn btn-light">
