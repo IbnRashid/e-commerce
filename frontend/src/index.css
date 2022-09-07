@@ -1,4 +1,19 @@
 /* main color rgba(65, 53, 87, 1) */
+body {
+	overflow-x: hidden;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap; /* added line */
+	border: 0;
+}
 
 main {
 	background: linear-gradient(
@@ -42,7 +57,9 @@ main {
 	border-radius: 25px;
 	height: 37px;
 	width: 340px;
+	/* max-width: 40vw; */
 	display: flex;
+	/* grid-template-columns: 80% 20%; */
 	align-items: center;
 }
 
@@ -55,6 +72,7 @@ main {
 	padding-left: 10px;
 	margin-right: 10px;
 	font-size: 18px;
+	/* width: 80%; */
 }
 
 .search-btn {
@@ -69,11 +87,13 @@ main {
 	width: 20%;
 }
 
-.nav-left {
+.nav-collapse {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
+	/* gap: 20px; */
+	width: 100%;
+	padding-left: 20px;
 }
 
 .nav-right {
@@ -92,8 +112,61 @@ main {
 		border-color 0.15s ease-in-out;
 }
 
-@media (max-width: 900px) {
+.mobile-nav-toggle {
+	display: none;
+}
 
+@media (max-width: 1000px) {
+	.test-header {
+		/* display: block; */
+		/* justify-content: flex-start; */
+		align-items: flex-start;
+		/* position: relative; */
+	}
+	.nav-collapse {
+		display: flex;
+		/* display: none; */
+		/* position: sticky; */
+		flex-direction: column;
+		justify-content: center;
+		/* align-items: flex-end; */
+		background: rgba(204, 0, 0, 0.1);
+		backdrop-filter: blur(2rem);
+		width: fit-content;
+		padding: 20px;
+		gap: 10px;
+		padding-top: 3.5rem;
+		/* height: max-content; */
+		/* transform: translateY(50px); */
+		/* z-index: 10000; */
+		transform: translateX(110%);
+	}
+	.primary-navigation[data-visible="true"] {
+		transform: translateX(0%)
+	}
+	.nav-right {
+		display: block;
+	}
+	.computech-logo {
+		align-self: flex-start;
+		justify-self: flex-end;
+		position: absolute;
+		/* align-items: flex-start; */
+		left: -50%;
+		transform: translateX(100px);
+	}
+	.mobile-nav-toggle {
+		display: block;
+		position: absolute;
+		z-index: 9999;
+		background: url("icon-hamburger.svg");
+		background-repeat: no-repeat;
+		width: 2rem;
+		border: 0;
+		aspect-ratio: 1;
+		top: 2rem;
+		right: 2rem;
+	}
 }
 
 /* HERO SECTION */
