@@ -169,6 +169,13 @@ main {
 	}
 }
 
+.post-nav {
+	margin-top: 70px;
+}
+.force-post-nav {
+	transform: translateY(70px);
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -203,16 +210,34 @@ svg {
 }
 
 .hero-text {
-	font-size: 3vw;
+	font-size: 3.5vw;
 	color: rgba(65, 53, 87, 1);
 	padding: 0;
 	margin: 0;
 	/* transform: translateX(30%); */
-	width: 30vw;
+	width: 35vw;
 	font-weight: 900;
 	font-family: "Poppins";
 	text-transform: none;
 	letter-spacing: normal;
+}
+
+@media (max-width: 700px) {
+	.hero {
+		flex-direction: column;
+	}
+	svg {
+		width: 100%;
+	}
+	.hero-txt {
+		width: 100%;
+	}
+	.hero-text {
+		width: 90%;
+		font-size: 9vw;
+		margin: 40px 0px 100px 0px;
+		text-align: center;
+	}
 }
 
 /*  */
