@@ -25,7 +25,7 @@ const App = () => {
 		<Router>
 			<Header2 />
 			{/* <Header /> */}
-			<main >
+			<main>
 				{/* <Container> */}
 					<Route path="/order/:id" component={OrderScreen} />
 					<Route path="/shipping" component={ShippingScreen} />
@@ -57,8 +57,9 @@ const App = () => {
 						component={HomeScreen}
 						exact
 					/>
-					<Route path="/" component={HomeScreen} exact />
+					{/* <Route path="/" component={HomeScreen} exact /> */}
 				{/* </Container> */}
+				<Route path="/" component={HomeScreen} exact />
 			</main>
 			<Footer />
 		</Router>
