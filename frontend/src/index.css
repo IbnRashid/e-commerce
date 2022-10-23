@@ -142,7 +142,7 @@ main {
 		transform: translateX(110%);
 	}
 	.primary-navigation[data-visible="true"] {
-		transform: translateX(0%)
+		transform: translateX(0%);
 	}
 	.nav-right {
 		display: block;
@@ -249,7 +249,14 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	transform: translateY(15vw);
+}
+
+.footer-txt {
+}
+
+.footer-input {
 }
 
 .main-footer-svg {

@@ -334,7 +334,20 @@ const HomeScreen = ({ match }) => {
 				</>
 			)}
 			<div>
-				<div className="main-footer-txt"> cow go mooo</div>
+				<div className="main-footer-txt"> 
+				  <div className="footer-txt">Subscribe To Newsletter</div>
+				  <form className="footer-input">
+					<input
+						name="q"
+						placeholder="Search Products..."
+						type="text"
+						className="search-input"
+					/>
+					<button type="submit" className="search-btn">
+						Search
+					</button>
+				</form>
+				</div>
 				<svg
 					className="main-footer-svg"
 					width="752"
