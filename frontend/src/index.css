@@ -176,16 +176,30 @@ main {
 	transform: translateY(70px);
 }
 .main-padding {
-	margin: 42px;
+	margin: 0px 42px;
 }
 
 /* HERO SECTION */
+
+/* .test {
+	margin: -100px;
+} */
+
+main:nth-child(1)  {
+	padding: 100px;
+	background-color: aqua;
+}
+
+/* .hero {
+	padding: 100px;
+} */
 
 .hero {
 	/* width: 100%;
 	height: 100%; */
 	/* display: flex; */
-	position: relative;
+	position: sticky;
+	/* float: left; */
 	z-index: 0;
 	/* min-height: 100vh; */
 	display: flex;
@@ -241,6 +255,11 @@ main {
 		margin: 40px 0px 100px 0px;
 		text-align: center;
 	}
+}
+
+.card {
+	border: none;
+	background-color: rgb(252, 252, 252);
 }
 
 .main-footer-txt {

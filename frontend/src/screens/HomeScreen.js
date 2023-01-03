@@ -29,7 +29,7 @@ const HomeScreen = ({ match }) => {
 			<Meta />
 			{!keyword ? (
 				// <ProductCarousel />
-				<div className="hero">
+				<div className="hero test">
 					<svg
 						className="main-hero-svg"
 						width="609"
@@ -319,7 +319,7 @@ const HomeScreen = ({ match }) => {
 				<Message variant="danger">{error}</Message>
 			) : (
 				<>
-					<Row className="main-padding">
+					<Row>
 						{products.map((product) => (
 							<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
 								<Product product={product} />

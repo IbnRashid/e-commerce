@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import img from "../computech-logo.svg";
+import img from "../logo.svg";
 
 const Header2 = () => {
 	// const dispatch = useDispatch();

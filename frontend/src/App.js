@@ -25,7 +25,7 @@ const App = () => {
 		<Router>
 			<Header2 />
 			{/* <Header /> */}
-			<main>
+			<main className="main-padding">
 				{/* <Container> */}
 					<Route path="/order/:id" component={OrderScreen} />
 					<Route path="/shipping" component={ShippingScreen} />
