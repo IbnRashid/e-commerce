@@ -11,6 +11,8 @@ import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 
+// require("dotenv").config();
+
 dotenv.config();
 
 connectDB();
