@@ -198,7 +198,7 @@ main > *  {
     overflow: hidden !important;
 } */
 
-.row {
+main > .row {
 	margin: 0px 42px;
 }
 
@@ -286,9 +286,40 @@ main > *  {
 }
 
 .footer-txt {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 .footer-input {
+	display: flex;
+	gap: 10px;
+	
+}
+
+.email-input {
+	outline: none;
+	border: 0;
+	/* border-radius: 5px 0 0 5px; */
+	/* height: 100%;
+	width: 80%;
+	padding-left: 10px;
+	margin-right: 10px; */
+	font-size: 18px;
+	/* width: 80%; */
+}
+
+.sub-btn {
+	outline: none;
+	border: 0;
+	/* border-radius: 0 5px 5px 0; */
+	background-color: rgba(65, 53, 87, 1);
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	height: 100%;
+	padding: 15px 30px;
+	/* width: 20%; */
 }
 
 .main-footer-svg {

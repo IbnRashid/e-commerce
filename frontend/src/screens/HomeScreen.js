@@ -339,12 +339,12 @@ const HomeScreen = ({ match }) => {
 				  <form className="footer-input">
 					<input
 						name="q"
-						placeholder="Search Products..."
+						placeholder="Enter Your Email"
 						type="text"
-						className="search-input"
+						className="email-input"
 					/>
-					<button type="submit" className="search-btn">
-						Search
+					<button type="submit" className="sub-btn">
+						Subscribe
 					</button>
 				</form>
 				</div>
